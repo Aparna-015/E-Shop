@@ -1,43 +1,86 @@
-/* .App {
-  text-align: center;
+
+
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container{
+  /* width: 750px;
+  height: 550px; */
+  background-image: url('assets/Images/Hero.jpg');
+  background-size: cover;
+  background-position: center;
+ 
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.main-section{
+.main-section {
   display: flex;
   justify-content: space-between;
+}
+
+.logo-section img {
+  margin: 10px;
+  width: 55px;
+  height: 55px;
+}
+.right-section{
+ margin-right: 50px;
+}
+.right-section a{
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+
+  
+}
+.button{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding:5px 15px;
+  margin: 5px;
+  border: 1px solid blue;
+}
+
+.right-section img{
+  width: 20px;
+  height: 20px;
+  
+}
+.hero-section{
+  color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ text-align: center;
+ transform: translate(-50%,-50%);
+ 
+}
+.hero-section h1:hover{
+  color: black;
+
+}
+.hero-section button{
+  background-color: whilte;
+  color: black;
+  border-radius: 20px;
+  padding:5px 20px;
+  margin: 10px;
+  border: 1px solid rgb(246, 246, 249);
+
+
+}
+button:hover {
+  background-color: #4550a0;
+  transform: scale(1.05);
+  color: wheat;
+}
+
+.img-section img{
+ position: absolute;
+  bottom: -10px;
+  width: 100%;
 }

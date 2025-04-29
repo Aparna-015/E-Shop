@@ -1,7 +1,7 @@
 import React from "react";
 import productImage from "../assets/Images/logo.png";
-import cart from "../assets/Images/cart.png";
-import hero from "../assets/Images/Hero.jpg";
+import cart from "../assets/Images/cartt.png";
+import bgimg from "../assets/Images/Background.png";
 const Home = () => {
   return (
     <div className="main-container">
@@ -9,27 +9,28 @@ const Home = () => {
         <div className="logo-section">
           <img src={productImage} />
         </div>
-        
-          <div>
-            <a href=""> Home</a>
 
-            <a href=""> about us</a>
+        <div className="right-section">
+          <a href=""> Home</a>
 
-            <a href=""> Sign in</a>
+          <a href=""> About Us</a>
 
-            <button>Login</button>
-       
-          
-            <img src={cart} alt="" />
-          
-        
+          <a href=""> Signin</a>
+
+          <button className="button">Login</button>
+
+          <img src={cart} alt="no image" />
+        </div>
       </div>
+      <div className="hero-section">
+        <h1>Endless choices, just for you</h1>
+        <button>Explore Products</button>
       </div>
-      <div className="image-container">
-        <img src={hero} alt="" />
+
+      <div className="img-section">
+        <img src={bgimg}/>
       </div>
     </div>
-    
   );
 };
 
