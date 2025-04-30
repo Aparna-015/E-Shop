@@ -1,6 +1,5 @@
 import React from "react";
-import productImage from "../assets/Images/logo.png";
-import cart from "../assets/Images/cartt.png";
+
 import bgimg from "../assets/Images/Background.png";
 import speaker from "../assets/Images/speaker.png"
 import LAPTOP from "../assets/Images/LAPTOP.png";
@@ -11,30 +10,25 @@ import icon from "../assets/Images/symbols.png"
 import devicon from "../assets/Images/deliver-icons.png";
 import crwnicon from "../assets/Images/crown-icon.png";
 import warrantyicon from "../assets/Images/Warranty.png"
+
+
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div  className="container">
       <div className="main-container">
         <div className="main-section">
-          <div className="logo-section ">
-
-            <img src={productImage} alt=""/>
-          </div>
-
-          <div className="right-section">
-            <a href=""> Home</a>
-
-            <a href=""> About Us</a>
-
-            <a href=""> Signin</a>
-
-            <button className="button">Login</button>
-            <img src={cart} alt="no " />
-          </div>
+        
         </div>
         <div className="hero-section">
           <h1>Endless choices, just for you</h1>
+         
+         
+         
+
+          <Link to="/product">
           <button>Explore Products</button>
+          </Link>
         </div>
 
         <div className="img-section">
