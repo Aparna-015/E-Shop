@@ -328,7 +328,7 @@ justify-content: center;
   border-radius: 8px;
   width:200px;
   height: 200px;
-  padding: 10px;
+  padding: 30px;
   box-sizing: border-box;
   border: 2px solid ghostwhite;
   background-color: ghostwhite;
@@ -355,7 +355,22 @@ justify-content: center;
   color: white;
   font-size: 12px;
   padding:5px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 
 }
+.product-items h3{
+  font-size: 12px;
+  font-weight: bold;
+}
 
+.product-items h4{
+  padding: 10px 0px;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.products-items{
+
+
+
+}

@@ -67,10 +67,10 @@ const products = [
   {
     id: 8,
     image: gameproduct,
-    title: "Panasonic LUMIX G7 Mirrorless Camera",
+    title: "HG WORLD Retro S10 Gamepad gaming console forPortableS",
     price: 870,
     description:
-      "Panasonic LUMIX G7 16.00 MP 4K Mirrorless Interchangeable Lens Camera Kit with 14-42 mm Lens (Black)",
+      "Black, Mini Video Game for Kids & Modern Gamer, Love by Fans of PS2,PS5,Xbox, game stick console ",
   },
   {
     id: 9,
