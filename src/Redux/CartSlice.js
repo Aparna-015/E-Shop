@@ -10,14 +10,14 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addTocart(state, action) {
-        const item = action.payload;
-        const existingitem = state.items.find((itemss) => itemss.id === item.id);
-      
-        if (!existingitem) {
-          state.items.push({ ...item, quantity: 1 });
-          state.amount += item.price; // ✅ Only increase amount when adding new item
-        }
-      },
+      const item = action.payload;
+      const existingitem = state.items.find((itemss) => itemss.id === item.id);
+
+      if (!existingitem) {
+        state.items.push({ ...item, quantity: 1 });
+        state.amount += item.price;
+      }
+    },
 
     increment(state, action) {
       const item = state.items.find((itemss) => itemss.id === action.payload);
@@ -28,9 +28,7 @@ const cartSlice = createSlice({
     },
 
     decrement(state, action) {
-      const item = state.items.find(
-        (itemss) => itemss.id === action.payload
-      );
+      const item = state.items.find((itemss) => itemss.id === action.payload);
       if (item) {
         if (item.quantity > 1) {
           item.quantity -= 1;
