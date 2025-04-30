@@ -1,4 +1,5 @@
 import "./App.css";
+import Cartpage from "./Components/Cartpage";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Product from "./Pages/Product";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/product" element={<Product/>}/>
 
           <Route path="/product/:id" element={<Productdetails/>}/>
+          <Route path="/cart" element={<Cartpage/>}/>
 
 ?        </Routes>
       </Router>

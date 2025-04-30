@@ -1,8 +1,11 @@
 import React from 'react'
 import productImage from "../assets/Images/logo.png";
-import cart from "../assets/Images/cartt.png";
-import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 const Header = () => {
+
+    const totalItems = useSelector((state) =>
+        state.cart.items.reduce((total, item) => total + item.quantity, 0)
+      );
   return (
     <div className='mains-section'>
         
@@ -20,7 +23,8 @@ const Header = () => {
                     <a href=""> Signin</a>
         
                     <button className="button">Login</button>
-                    <img src={cart} alt="no " />
+                    {/* <img src={cart} alt="no " /> */}
+                    🛒 {totalItems}
                   </div>
     </div>
   )
