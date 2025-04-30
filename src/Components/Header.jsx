@@ -1,6 +1,7 @@
 import React from 'react'
 import productImage from "../assets/Images/logo.png";
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 const Header = () => {
 
     const totalItems = useSelector((state) =>
@@ -11,20 +12,24 @@ const Header = () => {
         
 
           <div className="logo-section ">
+            <Link to="/">
         <img src={productImage} alt=""/>
-
+        </Link>
                   </div>
         
                   <div className="right-section">
-                    <a href=""> Home</a>
+                    {/* <a href=""> Home</a> */}
         
-                    <a href=""> About Us</a>
+        <Link to="/">
+        Home
+        </Link>
         
-                    <a href=""> Signin</a>
         
                     <button className="button">Login</button>
                     {/* <img src={cart} alt="no " /> */}
+                    <Link to="/cart"> 
                     🛒 {totalItems}
+                     </Link> 
                   </div>
     </div>
   )

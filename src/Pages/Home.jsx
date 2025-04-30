@@ -10,8 +10,10 @@ import icon from "../assets/Images/symbols.png";
 import devicon from "../assets/Images/deliver-icons.png";
 import crwnicon from "../assets/Images/crown-icon.png";
 import warrantyicon from "../assets/Images/Warranty.png";
+import products from "../Constant/data";
 
 import { Link } from "react-router-dom";
+import Featured from "../Components/Featured";
 const Home = () => {
   return (
     <div className="container">
@@ -68,6 +70,10 @@ const Home = () => {
         </div>
       </div>
 
+
+
+
+<Featured/>
       <div className="image-view-container">
         <div className="img-container">
           <img src={canon} alt="" />
