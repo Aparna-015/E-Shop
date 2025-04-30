@@ -29,6 +29,13 @@ const existingItem= cartItems.find((item)=> item.id === product.id);
     }
   };
   return (
+  
+  <>
+
+    <Link to="/product">
+<button className="buttn-products">Back to products</button>
+</Link>
+     
     <div className="product-wrapper">
       <div className="products-items">
         <div className="product-image-section">
@@ -47,7 +54,9 @@ const existingItem= cartItems.find((item)=> item.id === product.id);
           <button onClick={handleitems}>AddToCart</button>
         </Link>
       </div>
+
     </div>
+    </>
   );
 };
 

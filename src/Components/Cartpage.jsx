@@ -25,7 +25,7 @@ const Cartpage = () => {
             <img src={item.image}/>
             <h3>{item.title}</h3>
             <p>₹{item.price}</p>
-            <div>
+            <div className='cart-items-buttons'>
 
             <button onClick={() => dispatch(decrement(item.id))}>-</button>
             {item.quantity}
