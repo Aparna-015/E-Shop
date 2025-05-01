@@ -2,7 +2,6 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { increment,decrement } from '../Redux/CartSlice';
 
-import { motion , AnimatePresence} from 'framer-motion';
 
 const Cartpage = () => {
 

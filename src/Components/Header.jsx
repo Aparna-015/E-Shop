@@ -1,38 +1,27 @@
-import React from 'react'
+import React from "react";
 import productImage from "../assets/Images/logo.png";
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const Header = () => {
-
-    const totalItems = useSelector((state) =>
-        state.cart.items.reduce((total, item) => total + item.quantity, 0)
-      );
+  const totalItems = useSelector((state) =>
+    state.cart.items.reduce((total, item) => total + item.quantity, 0)
+  );
   return (
-    <div className='mains-section'>
-        
-
-          <div className="logo-section ">
-            <Link to="/">
-        <img src={productImage} alt=""/>
-        </Link>
-                  </div>
-        
-                  <div className="right-section">
-                    {/* <a href=""> Home</a> */}
-        
+    <div className="mains-section">
+      <div className="logo-section ">
         <Link to="/">
-        Home
+          <img src={productImage} alt="" />
         </Link>
-        
-        
-                    <button className="button">Login</button>
-                    {/* <img src={cart} alt="no " /> */}
-                    <Link to="/cart"> 
-                    🛒 {totalItems}
-                     </Link> 
-                  </div>
-    </div>
-  )
-}
+      </div>
 
-export default Header
+      <div className="right-section">
+        <Link to="/">Home</Link>
+
+        <button className="button">Login</button>
+        <Link to="/cart">🛒 {totalItems}</Link>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
