@@ -70,10 +70,7 @@ const Home = () => {
         </div>
       </div>
 
-
-
-
-<Featured/>
+      <Featured />
       <div className="image-view-container">
         <div className="img-container">
           <img src={canon} alt="" />
