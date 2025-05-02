@@ -36,7 +36,7 @@ const Cartpage = () => {
         ))
       )}
       <div className='amount-section'>
-      <h3>Total: ₹{amount}</h3>
+      <h3>Grand Total: ₹{amount}</h3>
       </div>
     </div>
   )
